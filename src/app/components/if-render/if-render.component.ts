@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class IfRenderComponent {
 canShow: boolean = true;
-name =  'adg';
+name =  'aRag';
 
 
 }
