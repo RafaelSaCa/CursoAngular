@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FirstComponentComponent } from './components/first-component/first-component.component';
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
@@ -12,6 +12,7 @@ import { ChangeNumberComponent } from './components/change-number/change-number.
 import { ChangeNumber2Component } from './components/change-number2/change-number2.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -25,10 +26,12 @@ import { PipesComponent } from './components/pipes/pipes.component';
     ChangeNumberComponent,
     ChangeNumber2Component,
     ListRenderComponent,
-    PipesComponent
+    PipesComponent,
+    TwoWayBindingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
