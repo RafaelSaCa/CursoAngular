@@ -17,7 +17,7 @@ animals : Animal[]= [
 
 animalDetails = ''
 
-showAge(animal: Animal){
+showAge(animal: Animal): void {
   this.animalDetails = `o pet ${animal.name} tem ${animal.age} ano(s)!`;
 }
 }
