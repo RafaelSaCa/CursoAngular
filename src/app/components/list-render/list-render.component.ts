@@ -5,26 +5,25 @@ import { ListService } from 'src/app/services/list.service';
 @Component({
   selector: 'app-list-render',
   templateUrl: './list-render.component.html',
-  styleUrls: ['./list-render.component.css']
+  styleUrls: ['./list-render.component.css'],
 })
 export class ListRenderComponent {
-animals : Animal[]= [
-  {name: 'TOM', type: 'DOG', age: 4},
-  {name:  'RAMBO', type: 'DOG', age: 2},
-  {name: 'THOR', type:'DOG', age: 3}
+  animals: Animal[] = [
+    { name: 'TOM', type: 'DOG', age: 4 },
+    { name: 'RAMBO', type: 'DOG', age: 2 },
+    { name: 'THOR', type: 'DOG', age: 3 },
+  ];
 
-]
+  animalDetails = '';
 
-animalDetails = '';
+  constructor(private listService: ListService) {}
 
-constructor(private listService: ListService){}
+  showAge(animal: Animal): void {
+    this.animalDetails = `o pet ${animal.name} tem ${animal.age} ano(s)!`;
+  }
 
-showAge(animal: Animal): void {
-  this.animalDetails = `o pet ${animal.name} tem ${animal.age} ano(s)!`;
-}
-
-removeAnimal(animal: Animal){
-  console.log('Removendo animal...');
-  this.animals = this.listService.remove(this.animals,animal);
-}
+  removeAnimal(animal: Animal) {
+    console.log('Removendo animal...');
+    this.animals = this.listService.remove(this.animals, animal);
+  }
 }

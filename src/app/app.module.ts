@@ -13,7 +13,7 @@ import { ChangeNumber2Component } from './components/change-number2/change-numbe
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
-
+import { AppRoutingModule } from './app.rounting.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +31,8 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
