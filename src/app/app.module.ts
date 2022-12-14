@@ -15,6 +15,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { AppRoutingModule } from './app.rounting.module';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { AppRoutingModule } from './app.rounting.module';
     ChangeNumber2Component,
     ListRenderComponent,
     PipesComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
